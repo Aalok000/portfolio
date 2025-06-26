@@ -22,6 +22,30 @@ const projects = [
     github: 'https://github.com/Aalok000',
     aiHint: 'web security'
   },
+  {
+    title: 'Autonomous Robots',
+    description: "Constructed both a line-following and an object-avoidance robot using components like Arduino Uno and NodeMCU. These projects demonstrate skills in sensor integration, motor control, and programming logic for autonomous navigation.",
+    image: 'https://placehold.co/600x400.png',
+    tags: ['Arduino', 'NodeMCU', 'Robotics', 'Sensors'],
+    github: 'https://github.com/Aalok000',
+    aiHint: 'robot arduino'
+  },
+  {
+    title: 'RFID Attendance System',
+    description: "Engineered an automated attendance system with a NodeMCU, RFID reader, and LCD. This project streamlines attendance tracking by capturing card scans and displaying status information, demonstrating practical application of IoT in administration.",
+    image: 'https://placehold.co/600x400.png',
+    tags: ['NodeMCU', 'RFID', 'LCD', 'IoT'],
+    github: 'https://github.com/Aalok000',
+    aiHint: 'rfid project'
+  },
+  {
+    title: 'IoT Smoke Detector',
+    description: "Designed and built a smart smoke detection system using an ESP32, a smoke sensor, and an OLED display. The device provides real-time alerts and data visualization, enhancing fire safety measures through IoT technology.",
+    image: 'https://placehold.co/600x400.png',
+    tags: ['ESP32', 'IoT', 'Smoke Sensor', 'OLED'],
+    github: 'https://github.com/Aalok000',
+    aiHint: 'smoke detector circuit'
+  },
 ];
 
 const Projects = ({ id }: { id: string }) => {

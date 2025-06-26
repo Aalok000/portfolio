@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Code, Terminal, ShieldCheck, GitBranch } from 'lucide-react';
+import { Code, Terminal, ShieldCheck, GitBranch, Cpu } from 'lucide-react';
 import { Progress } from '@/components/ui/progress';
 
 interface Skill {
@@ -51,6 +51,16 @@ const skillsData = {
       { name: 'Manual Testing', level: 75 },
     ],
   },
+  hardware: {
+    title: 'Hardware & IoT',
+    icon: <Cpu className="h-6 w-6 text-primary" />,
+    skills: [
+      { name: 'Arduino Uno', level: 85 },
+      { name: 'NodeMCU', level: 80 },
+      { name: 'Raspberry Pi', level: 75 },
+      { name: 'ESP32', level: 70 },
+    ],
+  },
 };
 
 const SkillCategory = ({ title, icon, skills }: { title: string; icon: React.ReactNode; skills: Skill[] }) => (
@@ -79,11 +89,12 @@ const Skills = ({ id }: { id: string }) => {
   return (
     <section id={id} className="container mx-auto px-4 py-8">
       <h2 className="text-3xl md:text-4xl font-headline mb-8 text-center text-primary">Skills Showcase</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <SkillCategory {...skillsData.programming} />
         <SkillCategory {...skillsData.tools} />
         <SkillCategory {...skillsData.os} />
         <SkillCategory {...skillsData.cybersecurity} />
+        <SkillCategory {...skillsData.hardware} />
       </div>
     </section>
   );
