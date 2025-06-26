@@ -17,7 +17,7 @@ const Achievements = ({ id }: { id: string }) => {
       <h2 className="text-3xl md:text-4xl font-headline mb-8 text-center text-primary">Achievements & Certifications</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {achievements.map((ach, index) => (
-          <Card key={index} className="text-center bg-card/50 hover:border-primary/50 transition-colors duration-300">
+          <Card key={index} className="text-center bg-card/50 hover:border-primary/50 transition-all duration-300 ease-in-out hover:shadow-[0_0_20px_5px_hsl(var(--primary))]">
             <CardHeader>
               <div className="flex justify-center mb-4">{iconMap[ach.icon]}</div>
               <CardTitle className="font-headline text-xl">{ach.title}</CardTitle>
