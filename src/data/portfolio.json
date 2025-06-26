@@ -1,3 +1,4 @@
+
 {
   "about": {
     "description": "I am a final-year BCA student with a deep-seated passion for cybersecurity. My journey is driven by a curiosity for ethical hacking, vulnerability assessment, and network security. I am actively involved in the cybersecurity community, constantly learning, and seeking to apply my skills to solve real-world security challenges.",
@@ -230,21 +231,33 @@
       "role": "Member of BSides Noida",
       "company": "Cybersecurity Community",
       "duration": "December 2024 - Present",
+      "slug": "bsides-noida-member",
       "description": [
         "Active member of the BSides Noida cybersecurity community.",
         "Participate in various discussions, workshops, and networking sessions.",
         "Engage with industry experts to learn about real-world security challenges.",
         "Contribute to knowledge sharing and collaborative learning."
+      ],
+      "gallery": [
+        { "url": "https://placehold.co/800x600.png", "aiHint": "cybersecurity conference" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "group discussion" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "networking event" }
       ]
     },
     {
       "role": "FCRF Summit 2k25 Volunteer",
       "company": "Cybersecurity Event",
       "duration": "February 2025",
+      "slug": "fcrf-summit-volunteer",
       "description": [
         "Assisted in organizing the FCRF Summit 2K25, a cybersecurity-focused event.",
         "Involved in event planning, speaker coordination, and technical support.",
         "Helped facilitate ethical hacking challenges and Capture The Flag (CTF) events."
+      ],
+      "gallery": [
+        { "url": "https://placehold.co/800x600.png", "aiHint": "event banner" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "volunteer team" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "ctf competition" }
       ]
     }
   ],
