@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -31,9 +32,9 @@ const Projects = ({ id }: { id: string }) => {
             </CardContent>
             <CardFooter>
               <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
-                <a href={project.github} target="_blank" rel="noopener noreferrer">
-                  view a photos
-                </a>
+                <Link href={`/projects/${project.slug}`}>
+                  View Photos
+                </Link>
               </Button>
             </CardFooter>
           </Card>
