@@ -265,32 +265,62 @@
     {
       "icon": "Trophy",
       "title": "1st Place in Project NOVA 2k24",
-      "description": "Awarded first prize at the Project NOVA 2k24 event held at IPEM College."
+      "slug": "project-nova-winner",
+      "description": "Awarded first prize at the Project NOVA 2k24 event held at IPEM College.",
+      "gallery": [
+        { "url": "https://placehold.co/800x600.png", "aiHint": "award ceremony" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "trophy prize" }
+      ]
     },
     {
       "icon": "Trophy",
       "title": "2nd Place in SQARD OF IOT",
-      "description": "Secured second position in the HACK-A-THON 2K24 at IMS Ghaziabad."
+      "slug": "sqard-of-iot-runner-up",
+      "description": "Secured second position in the HACK-A-THON 2K24 at IMS Ghaziabad.",
+       "gallery": [
+        { "url": "https://placehold.co/800x600.png", "aiHint": "hackathon event" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "award certificate" }
+      ]
     },
     {
       "icon": "Trophy",
       "title": "3rd Place in Cross Road 2k24",
-      "description": "Achieved third position at the Cross Road 2k24 event at HI-Tech College."
+      "slug": "cross-road-2k24-third",
+      "description": "Achieved third position at the Cross Road 2k24 event at HI-Tech College.",
+       "gallery": [
+        { "url": "https://placehold.co/800x600.png", "aiHint": "tech competition" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "group photo" }
+      ]
     },
     {
       "icon": "BookOpen",
       "title": "Cyber Security Certifications",
-      "description": "Completed certifications from Coursera (Cyber Security Roles) and IIT Delhi (Cyber Forensics & CTF)."
+      "slug": "cyber-security-certs",
+      "description": "Completed certifications from Coursera (Cyber Security Roles) and IIT Delhi (Cyber Forensics & CTF).",
+      "gallery": [
+        { "url": "https://placehold.co/800x600.png", "aiHint": "online certificate" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "coursera logo" }
+      ]
     },
     {
       "icon": "Shield",
       "title": "Ethical Hacking Certification",
-      "description": "Certified in Ethical Hacking from WsCubeTech, covering key principles and techniques."
+      "slug": "ethical-hacking-cert",
+      "description": "Certified in Ethical Hacking from WsCubeTech, covering key principles and techniques.",
+      "gallery": [
+        { "url": "https://placehold.co/800x600.png", "aiHint": "security certificate" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "code screen" }
+      ]
     },
     {
       "icon": "Users",
       "title": "Core-Coordinator MARKFEST 2K23",
-      "description": "Served as a Core-Coordinator for the annual college fest at IMS Ghaziabad."
+      "slug": "markfest-coordinator",
+      "description": "Served as a Core-Coordinator for the annual college fest at IMS Ghaziabad.",
+       "gallery": [
+        { "url": "https://placehold.co/800x600.png", "aiHint": "college festival" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "event management" }
+      ]
     }
   ],
   "employmentExpress": {
