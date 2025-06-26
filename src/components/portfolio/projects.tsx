@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Github } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 
 const projects = [
@@ -75,7 +74,7 @@ const Projects = ({ id }: { id: string }) => {
             <CardFooter>
               <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
                 <a href={project.github} target="_blank" rel="noopener noreferrer">
-                  <Github className="mr-2 h-4 w-4" /> View on GitHub
+                  view a photos
                 </a>
               </Button>
             </CardFooter>
