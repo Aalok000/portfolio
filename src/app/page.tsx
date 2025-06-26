@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState, useEffect, useMemo, FC } from 'react';
@@ -50,15 +51,20 @@ const SectionSkeleton = () => (
 export default function Home() {
   const [sectionOrder, setSectionOrder] = useState<string[]>(defaultSectionOrder);
   const [loading, setLoading] = useState(true);
+  const [visitorProfile, setVisitorProfile] = useState<string | null>(null);
+
+  useEffect(() => {
+    // On initial load, get the profile from the cookie
+    setVisitorProfile(getCookie('visitorProfile'));
+  }, []);
 
   useEffect(() => {
     const fetchAndSetOrder = async () => {
       setLoading(true);
-      const visitorProfile = getCookie('visitorProfile');
       if (visitorProfile) {
         try {
           const result: PersonalizeContentOutput = await personalizeContent({ visitorProfile });
-          const aiPrioritized = result.prioritizedSections;
+          const aiPrioritized = result.prioritizedSections.filter(section => section in sectionConfig);
           const allSections = Object.keys(sectionConfig);
           const orderedSections = [
             ...aiPrioritized,
@@ -76,33 +82,12 @@ export default function Home() {
     };
 
     fetchAndSetOrder();
-  }, []);
+  }, [visitorProfile]);
   
   const handleProfileUpdate = () => {
-    // Re-run the personalization logic
-    const fetchAndSetOrder = async () => {
-      setLoading(true);
-      const visitorProfile = getCookie('visitorProfile');
-      if (visitorProfile) {
-        try {
-          const result: PersonalizeContentOutput = await personalizeContent({ visitorProfile });
-          const aiPrioritized = result.prioritizedSections;
-          const allSections = Object.keys(sectionConfig);
-          const orderedSections = [
-            ...aiPrioritized,
-            ...allSections.filter(section => !aiPrioritized.includes(section))
-          ];
-          setSectionOrder(orderedSections as (keyof typeof sectionConfig)[]);
-        } catch (error) {
-          console.error("Failed to personalize content:", error);
-          setSectionOrder(defaultSectionOrder);
-        }
-      } else {
-        setSectionOrder(defaultSectionOrder);
-      }
-      setLoading(false);
-    };
-    fetchAndSetOrder();
+    // When the profile is updated in the child component, update the state here to trigger the effect
+    const profile = getCookie('visitorProfile');
+    setVisitorProfile(profile);
   };
 
   const renderedSections = useMemo(() => {
