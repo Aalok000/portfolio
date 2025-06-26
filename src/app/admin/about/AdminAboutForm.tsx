@@ -1,7 +1,6 @@
 'use client';
 
 import type { getPortfolioData } from '@/lib/data';
-import { useFormState } from 'react-dom';
 import {
   Card,
   CardContent,
@@ -15,7 +14,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { updateAbout } from '@/app/actions/portfolio';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useActionState } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import Image from 'next/image';
 
@@ -96,7 +95,7 @@ export default function AdminAboutForm({ data: initialData }: AboutFormProps) {
   const aspect = 1;
 
   const initialState = { message: '', success: false };
-  const [state, dispatch] = useFormState(updateAbout, initialState);
+  const [state, dispatch] = useActionState(updateAbout, initialState);
 
   useEffect(() => {
     setData(initialData);
