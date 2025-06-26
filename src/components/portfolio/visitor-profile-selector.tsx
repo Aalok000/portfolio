@@ -57,7 +57,9 @@ const VisitorProfileSelector = ({ onProfileUpdate }: VisitorProfileSelectorProps
             <SelectContent>
               <SelectItem value="recruiter">Recruiter / Hiring Manager</SelectItem>
               <SelectItem value="academic">Academic / Professor</SelectItem>
-              <SelectItem value="developer">Fellow Developer</SelectItem>
+              <SelectItem value="developer" className="transition-shadow duration-300 ease-in-out focus:shadow-[0_0_15px_3px_hsl(var(--accent))]">
+                Fellow Developer
+              </SelectItem>
               <SelectItem value="other">Other</SelectItem>
             </SelectContent>
           </Select>
