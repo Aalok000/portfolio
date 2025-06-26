@@ -8,38 +8,50 @@ import { ArrowDown } from 'lucide-react';
 const Hero = () => {
   const [name, setName] = useState('');
   const fullName = 'Aalok Tomer';
+  const [isNameDeleting, setIsNameDeleting] = useState(false);
+  
   const [subtitle, setSubtitle] = useState('');
   const fullSubtitle = 'Ethical Hacker & Cybersecurity Student';
-  
-  const [nameTypingDone, setNameTypingDone] = useState(false);
-  const [isDeleting, setIsDeleting] = useState(false);
+  const [isSubtitleDeleting, setIsSubtitleDeleting] = useState(false);
 
-  // Effect for typing name
+  // Effect for typing/deleting name in a loop
   useEffect(() => {
-    if (name.length < fullName.length) {
-      const timer = setTimeout(() => {
-        setName(fullName.slice(0, name.length + 1));
-      }, 150);
-      return () => clearTimeout(timer);
-    } else {
-      // Short pause after name is typed
-      const timer = setTimeout(() => setNameTypingDone(true), 500);
-      return () => clearTimeout(timer);
-    }
-  }, [name, fullName]);
+    const handleTyping = () => {
+      if (!isNameDeleting) {
+        // Typing
+        if (name.length < fullName.length) {
+          setName(fullName.slice(0, name.length + 1));
+        } else {
+          // Pause and then start deleting
+          setTimeout(() => setIsNameDeleting(true), 2000);
+        }
+      } else {
+        // Deleting
+        if (name.length > 0) {
+          setName(name.slice(0, -1));
+        } else {
+          // Finished deleting, start typing again
+          setIsNameDeleting(false);
+        }
+      }
+    };
+    
+    const typingSpeed = isNameDeleting ? 100 : 150;
+    const timer = setTimeout(handleTyping, typingSpeed);
+
+    return () => clearTimeout(timer);
+  }, [name, isNameDeleting, fullName]);
 
   // Effect for typing/deleting subtitle in a loop
   useEffect(() => {
-    if (!nameTypingDone) return;
-
     const handleTyping = () => {
-      if (!isDeleting) {
+      if (!isSubtitleDeleting) {
         // Typing
         if (subtitle.length < fullSubtitle.length) {
           setSubtitle(fullSubtitle.slice(0, subtitle.length + 1));
         } else {
           // Pause and then start deleting
-          setTimeout(() => setIsDeleting(true), 2000);
+          setTimeout(() => setIsSubtitleDeleting(true), 2000);
         }
       } else {
         // Deleting
@@ -47,29 +59,28 @@ const Hero = () => {
           setSubtitle(subtitle.slice(0, -1));
         } else {
           // Finished deleting, start typing again
-          setIsDeleting(false);
+          setIsSubtitleDeleting(false);
         }
       }
     };
     
-    const typingSpeed = isDeleting ? 50 : 100;
+    const typingSpeed = isSubtitleDeleting ? 50 : 100;
     const timer = setTimeout(handleTyping, typingSpeed);
 
     return () => clearTimeout(timer);
-
-  }, [nameTypingDone, subtitle, isDeleting, fullSubtitle]);
+  }, [subtitle, isSubtitleDeleting, fullSubtitle]);
 
   return (
     <section id="hero" className="relative h-screen flex items-center justify-center text-center overflow-hidden">
       <HackerAnimation />
       <div className="relative z-10 p-4 bg-background/50 backdrop-blur-sm rounded-lg">
-        <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold text-foreground">
+        <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold text-foreground min-h-[5rem] md:min-h-[6rem] lg:min-h-[7.5rem]">
           {name}
-          {!nameTypingDone && <span className="text-accent animate-pulse ml-2">|</span>}
+          <span className="text-accent animate-pulse ml-2">|</span>
         </h1>
-        <p className="mt-4 text-lg md:text-2xl text-accent font-code min-h-[2rem]">
+        <p className="mt-4 text-lg md:text-2xl text-accent font-code min-h-[2rem] md:min-h-[2.25rem]">
           {subtitle}
-          {nameTypingDone && <span className="animate-pulse ml-1">|</span>}
+          <span className="animate-pulse ml-1">|</span>
         </p>
         <div className="mt-8">
           <Button asChild variant="outline" size="lg" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground">
