@@ -19,7 +19,7 @@ const icons: { [key: string]: React.ReactNode } = {
 };
 
 const SkillCategory = ({ title, icon, skills }: { title: string; icon: React.ReactNode; skills: Skill[] }) => (
-  <Card className="bg-card/50 hover:border-primary/50 transition-colors duration-300">
+  <Card className="bg-card/50 hover:border-primary/50 transition-all duration-300 ease-in-out hover:shadow-[0_0_20px_5px_hsl(var(--accent))]">
     <CardHeader>
       <div className="flex items-center gap-4">
         {icon}
