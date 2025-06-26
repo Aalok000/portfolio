@@ -13,6 +13,7 @@ const UpdateAboutSchema = z.object({
     .refine((file) => file.size === 0 || file.type.startsWith('image/'), 'File must be an image.')
     .refine((file) => file.size < 4 * 1024 * 1024, 'Image must be less than 4MB.')
     .optional(),
+  croppedImage: z.string().optional(),
 });
 
 type FormState = {
@@ -28,6 +29,7 @@ export async function updateAbout(
     const validatedFields = UpdateAboutSchema.safeParse({
       description: formData.get('description'),
       image: formData.get('image'),
+      croppedImage: formData.get('croppedImage'),
     });
 
     if (!validatedFields.success) {
@@ -37,7 +39,7 @@ export async function updateAbout(
       };
     }
     
-    const { description, image } = validatedFields.data;
+    const { description, image, croppedImage } = validatedFields.data;
     const portfolioData = await getPortfolioData();
     if (!portfolioData) {
       throw new Error('Portfolio data not found.');
@@ -45,12 +47,24 @@ export async function updateAbout(
 
     portfolioData.about.description = description;
 
-    if (image && image.size > 0) {
+    let buffer: Buffer | undefined;
+    let filename: string | undefined;
+
+    if (croppedImage && croppedImage.startsWith('data:image')) {
+      const base64Data = croppedImage.replace(/^data:image\/\w+;base64,/, '');
+      buffer = Buffer.from(base64Data, 'base64');
+      const mimeType = croppedImage.match(/data:(image\/[^;]+);/)?.[1] || 'image/png';
+      const extension = mimeType.split('/')[1];
+      filename = `profile.${extension}`;
+    } else if (image && image.size > 0) {
+      buffer = Buffer.from(await image.arrayBuffer());
+      filename = `profile${path.extname(image.name)}`;
+    }
+
+    if (buffer && filename) {
       const uploadDir = path.join(process.cwd(), 'public/uploads');
       await fs.mkdir(uploadDir, { recursive: true });
 
-      const buffer = Buffer.from(await image.arrayBuffer());
-      const filename = `profile${path.extname(image.name)}`;
       const imagePath = path.join(uploadDir, filename);
       await fs.writeFile(imagePath, buffer);
       
