@@ -12,7 +12,7 @@ const Experience = ({ id }: { id: string }) => {
           <div key={index} className="relative mb-12">
             <div className={`flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
               <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:pl-8' : 'md:pr-8'}`}>
-                <div className="p-6 rounded-lg shadow-lg bg-card border border-border hover:border-primary/50 transition-colors duration-300">
+                <div className="p-6 rounded-lg shadow-lg bg-card border border-border transition-all duration-300 ease-in-out hover:border-primary/50 hover:shadow-[0_0_20px_5px_hsl(var(--primary))]">
                   <h3 className="font-headline text-xl text-accent">{exp.role}</h3>
                   <p className="font-semibold mb-2">{exp.company}</p>
                   <p className="text-sm text-muted-foreground mb-4">{exp.duration}</p>
