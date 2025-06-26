@@ -11,7 +11,7 @@ const Projects = ({ id }: { id: string }) => {
       <h2 className="text-3xl md:text-4xl font-headline mb-8 text-center text-primary">Project Showcase</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {data.projects.map((project, index) => (
-          <Card key={index} className="flex flex-col bg-card/50 hover:border-primary/50 transition-colors duration-300">
+          <Card key={index} className="flex flex-col bg-card/50 transition-all duration-300 ease-in-out hover:border-primary/50 hover:shadow-[0_0_20px_5px_hsl(var(--primary))]">
             <CardHeader>
               <Image
                 src={project.image}
