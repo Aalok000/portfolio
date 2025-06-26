@@ -2,7 +2,7 @@
 {
   "about": {
     "description": "I am a final-year BCA student with a deep-seated passion for cybersecurity. My journey is driven by a curiosity for ethical hacking, vulnerability assessment, and network security. I am actively involved in the cybersecurity community, constantly learning, and seeking to apply my skills to solve real-world security challenges.",
-    "imageUrl": "/profile.jpg",
+    "imageUrl": "https://placehold.co/400x400.png",
     "imageAiHint": "professional portrait",
     "education": [
       {
