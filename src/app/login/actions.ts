@@ -1,10 +1,12 @@
 'use server';
 
 import { cookies } from 'next/headers';
+import { redirect } from 'next/navigation';
 import { z } from 'zod';
 
 const LoginSchema = z.object({
   password: z.string(),
+  redirect: z.string(),
 });
 
 type FormState = {
@@ -18,13 +20,14 @@ export async function login(
 ): Promise<FormState> {
   const validatedFields = LoginSchema.safeParse({
     password: formData.get('password'),
+    redirect: formData.get('redirect'),
   });
 
   if (!validatedFields.success) {
     return { success: false, message: 'Invalid form data.' };
   }
 
-  const { password } = validatedFields.data;
+  const { password, redirect: redirectUrl } = validatedFields.data;
 
   // IMPORTANT: In a real application, use a securely hashed password comparison.
   // This is a simplified check for demonstration purposes.
@@ -36,7 +39,8 @@ export async function login(
       maxAge: 60 * 60 * 24, // 1 day
       path: '/',
     });
-    return { success: true, message: 'Login successful!' };
+    // Redirect on the server
+    redirect(redirectUrl);
   } else {
     return { success: false, message: 'Incorrect password.' };
   }

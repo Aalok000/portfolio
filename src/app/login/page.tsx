@@ -15,21 +15,18 @@ export default function LoginPage() {
   const [state, formAction] = useActionState(login, initialState);
   const { toast } = useToast();
   const searchParams = useSearchParams();
+  const redirectUrl = searchParams.get('redirect') || '/admin';
 
   useEffect(() => {
-    if (state.message) {
+    // Only show toast for errors, as success is handled by server-side redirect.
+    if (state.message && !state.success) {
       toast({
-        title: state.success ? 'Success' : 'Error',
+        title: 'Error',
         description: state.message,
-        variant: state.success ? 'default' : 'destructive',
+        variant: 'destructive',
       });
     }
-    if (state.success) {
-      const redirectUrl = searchParams.get('redirect') || '/admin';
-      // Use a hard redirect to ensure the browser sends the new auth cookie
-      window.location.href = redirectUrl;
-    }
-  }, [state, toast, searchParams]);
+  }, [state, toast]);
 
   return (
     <main className="flex min-h-screen items-center justify-center bg-muted/40 p-4">
@@ -43,6 +40,7 @@ export default function LoginPage() {
         </CardHeader>
         <CardContent>
           <form action={formAction} className="space-y-4">
+            <input type="hidden" name="redirect" value={redirectUrl} />
             <div className="space-y-2">
               <Label htmlFor="password">Password</Label>
               <Input id="password" name="password" type="password" required />
