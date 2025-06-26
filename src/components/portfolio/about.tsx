@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { GraduationCap } from 'lucide-react';
 
 const About = ({ id }: { id: string }) => {
   return (
@@ -20,11 +21,26 @@ const About = ({ id }: { id: string }) => {
           </div>
           <div className="md:col-span-2 p-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I am a passionate and driven cybersecurity enthusiast with a strong foundation in full-stack development. My journey into tech began with a fascination for how things work, which quickly evolved into a deep interest in protecting digital systems. I thrive on challenges, from building secure web applications to participating in competitive hackathons.
+              I am a final-year BCA student with a deep-seated passion for cybersecurity. My journey is driven by a curiosity for ethical hacking, vulnerability assessment, and network security. I am actively involved in the cybersecurity community, constantly learning, and seeking to apply my skills to solve real-world security challenges.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed mt-4">
-              With hands-on experience in various technologies and a constant desire to learn, I am dedicated to creating robust, secure, and efficient solutions. I am actively seeking opportunities to apply my skills in a professional environment and contribute to meaningful projects in the cybersecurity domain.
-            </p>
+            <div className="mt-8">
+              <h3 className="text-2xl font-headline mb-4 text-accent flex items-center gap-2">
+                <GraduationCap />
+                Education
+              </h3>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-lg">BCA (Bachelor of Computer Applications)</h4>
+                  <p className="text-muted-foreground">IMS University Courses Campus, Ghaziabad</p>
+                  <p className="text-sm text-muted-foreground">2022 – 2025</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-lg">Class XII (U.P Board)</h4>
+                  <p className="text-muted-foreground">K.M.S. School, Pilkhuwa (Hapur)</p>
+                  <p className="text-sm text-muted-foreground">2021 – 2022</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Card>

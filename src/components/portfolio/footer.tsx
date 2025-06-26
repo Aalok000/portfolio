@@ -9,12 +9,12 @@ const Footer = () => {
         <h3 className="font-headline text-2xl mb-4">Get in Touch</h3>
         <div className="flex justify-center gap-4 mb-4">
           <Button variant="outline" size="icon" asChild>
-            <a href="https://github.com/aaloktomer" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a href="https://github.com/Aalok000" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Github />
             </a>
           </Button>
           <Button variant="outline" size="icon" asChild>
-            <a href="https://linkedin.com/in/aaloktomer" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/aalok-tomer-58691b25a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <Linkedin />
             </a>
           </Button>

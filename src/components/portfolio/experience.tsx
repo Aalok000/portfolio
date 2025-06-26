@@ -1,24 +1,25 @@
 import React from 'react';
 
 const experiences = [
-  {
-    role: 'Cybersecurity Analyst Intern',
-    company: 'SecureNet Solutions',
-    duration: 'June 2023 - August 2023',
+    {
+    role: 'Member of BSides Noida',
+    company: 'Cybersecurity Community',
+    duration: 'December 2024 - Present',
     description: [
-      'Assisted in vulnerability assessments and penetration testing for client web applications.',
-      'Monitored security alerts and helped investigate potential security incidents.',
-      'Contributed to the development of internal security tools using Python.',
+      'Active member of the BSides Noida cybersecurity community.',
+      'Participate in various discussions, workshops, and networking sessions.',
+      'Engage with industry experts to learn about real-world security challenges.',
+      'Contribute to knowledge sharing and collaborative learning.',
     ],
   },
   {
-    role: 'IT Support Volunteer',
-    company: 'Community Tech Center',
-    duration: 'September 2022 - May 2023',
+    role: 'FCRF Summit 2k25 Volunteer',
+    company: 'Cybersecurity Event',
+    duration: 'February 2025',
     description: [
-      'Provided technical support and troubleshooting for hardware and software issues.',
-      'Assisted in setting up and maintaining the center\'s local network.',
-      'Conducted workshops on basic computer literacy and online safety for the community.',
+      'Assisted in organizing the FCRF Summit 2K25, a cybersecurity-focused event.',
+      'Involved in event planning, speaker coordination, and technical support.',
+      'Helped facilitate ethical hacking challenges and Capture The Flag (CTF) events.',
     ],
   },
 ];
@@ -26,7 +27,7 @@ const experiences = [
 const Experience = ({ id }: { id: string }) => {
   return (
     <section id={id} className="container mx-auto px-4 py-8">
-      <h2 className="text-3xl md:text-4xl font-headline mb-12 text-center text-primary">Experience</h2>
+      <h2 className="text-3xl md:text-4xl font-headline mb-12 text-center text-primary">Community & Volunteer Experience</h2>
       <div className="relative">
         <div className="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-border"></div>
         {experiences.map((exp, index) => (

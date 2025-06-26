@@ -12,7 +12,7 @@ const Hero = () => {
           Aalok Tomer
         </h1>
         <p className="mt-4 text-lg md:text-2xl text-muted-foreground">
-          Cybersecurity Enthusiast & Full-Stack Developer
+          Cybersecurity Student & Ethical Hacker
         </p>
         <div className="mt-8">
           <Button asChild variant="outline" size="lg" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground">

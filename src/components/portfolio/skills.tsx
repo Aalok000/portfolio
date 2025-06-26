@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Code, Terminal, Server, ShieldCheck, Database, GitBranch, Cloud } from 'lucide-react';
+import { Code, Terminal, ShieldCheck, GitBranch } from 'lucide-react';
 import { Progress } from '@/components/ui/progress';
 
 interface Skill {
@@ -11,43 +11,44 @@ interface Skill {
 
 const skillsData = {
   programming: {
-    title: 'Programming & Databases',
+    title: 'Languages & Scripting',
     icon: <Code className="h-6 w-6 text-primary" />,
     skills: [
-      { name: 'Python', level: 90 },
-      { name: 'JavaScript / TypeScript', level: 85 },
-      { name: 'SQL / NoSQL', level: 80 },
-      { name: 'Bash', level: 75 },
+      { name: 'Python', level: 85 },
+      { name: 'Shell Scripting', level: 80 },
+      { name: 'SQL', level: 75 },
+      { name: 'C', level: 70 },
     ],
   },
   tools: {
-    title: 'Frameworks & Tools',
+    title: 'Security Tools & Frameworks',
     icon: <GitBranch className="h-6 w-6 text-primary" />,
     skills: [
-      { name: 'React / Next.js', level: 90 },
-      { name: 'Node.js / Express', level: 85 },
-      { name: 'Docker', level: 80 },
-      { name: 'Git / GitHub', level: 95 },
+      { name: 'Burp Suite', level: 90 },
+      { name: 'Nmap', level: 85 },
+      { name: 'Metasploit', level: 80 },
+      { name: 'Wireshark', level: 75 },
+      { name: 'Nessus', level: 70 },
+      { name: 'OWASP ZAP', level: 70 },
     ],
   },
   os: {
-    title: 'Operating Systems & Cloud',
-    icon: <Cloud className="h-6 w-6 text-primary" />,
+    title: 'Operating Systems',
+    icon: <Terminal className="h-6 w-6 text-primary" />,
     skills: [
-      { name: 'Linux (Debian/Arch)', level: 95 },
-      { name: 'Windows Server', level: 80 },
-      { name: 'macOS', level: 70 },
-      { name: 'Firebase / GCP', level: 75 },
+      { name: 'Kali Linux', level: 95 },
+      { name: 'Windows', level: 80 },
     ],
   },
   cybersecurity: {
     title: 'Cybersecurity Concepts',
     icon: <ShieldCheck className="h-6 w-6 text-primary" />,
     skills: [
-      { name: 'Network Security', level: 85 },
-      { name: 'Penetration Testing (Wireshark, Nmap)', level: 80 },
-      { name: 'Cryptography', level: 75 },
-      { name: 'Digital Forensics', level: 70 },
+      { name: 'VAPT', level: 90 },
+      { name: 'Web Application Security', level: 85 },
+      { name: 'OWASP Top 10', level: 85 },
+      { name: 'Network Security', level: 80 },
+      { name: 'Manual Testing', level: 75 },
     ],
   },
 };

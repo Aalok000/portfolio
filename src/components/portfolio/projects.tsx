@@ -7,28 +7,20 @@ import { Badge } from '@/components/ui/badge';
 
 const projects = [
   {
-    title: 'SecureAuth Vault',
-    description: 'A full-stack web application for securely storing and managing user credentials with end-to-end encryption. Features role-based access control and detailed audit logs.',
+    title: 'Raspberry Pi Pico Rubber Ducky',
+    description: 'Built a custom USB Rubber Ducky using a Raspberry Pi Pico to simulate Human Interface Device (HID) attacks. Developed and tested various payloads for task automation, reverse shells, and proof-of-concept demonstrations.',
     image: 'https://placehold.co/600x400.png',
-    tags: ['Next.js', 'Node.js', 'PostgreSQL', 'Cryptography', 'Docker'],
-    github: 'https://github.com/aaloktomer/secureauth-vault',
-    aiHint: 'secure application'
+    tags: ['Raspberry Pi', 'Python', 'HID Attack', 'Payloads'],
+    github: 'https://github.com/Aalok000',
+    aiHint: 'raspberry pi circuit'
   },
   {
-    title: 'PacketGuardian IDS',
-    description: 'A lightweight, rule-based Intrusion Detection System (IDS) written in Python. Monitors network traffic for suspicious patterns and sends real-time alerts.',
+    title: 'Web App VAPT on DVWA',
+    description: 'Conducted comprehensive vulnerability testing on the Damn Vulnerable Web Application (DVWA). Identified and exploited common web vulnerabilities such as SQL Injection, XSS, and CSRF to understand attack vectors and mitigation strategies.',
     image: 'https://placehold.co/600x400.png',
-    tags: ['Python', 'Scapy', 'Socket', 'Network Security'],
-    github: 'https://github.com/aaloktomer/packetguardian-ids',
-    aiHint: 'network security'
-  },
-  {
-    title: 'Cyber-Threat Dashboard',
-    description: 'A real-time dashboard that visualizes global cyber threats using various public APIs. Built with React and D3.js for dynamic data visualization.',
-    image: 'https://placehold.co/600x400.png',
-    tags: ['React', 'D3.js', 'API Integration', 'Data Visualization'],
-    github: 'https://github.com/aaloktomer/cyber-threat-dashboard',
-    aiHint: 'cyber dashboard'
+    tags: ['VAPT', 'DVWA', 'SQLi', 'XSS', 'Web Security'],
+    github: 'https://github.com/Aalok000',
+    aiHint: 'web security'
   },
 ];
 
@@ -36,7 +28,7 @@ const Projects = ({ id }: { id: string }) => {
   return (
     <section id={id} className="container mx-auto px-4 py-8">
       <h2 className="text-3xl md:text-4xl font-headline mb-8 text-center text-primary">Project Showcase</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <Card key={index} className="flex flex-col bg-card/50 hover:border-primary/50 transition-colors duration-300">
             <CardHeader>
