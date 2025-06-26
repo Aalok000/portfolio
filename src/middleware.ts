@@ -21,5 +21,7 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/admin/:path*', '/login'],
+  // Apply middleware to all admin routes and the login page.
+  // Explicitly listing /admin in addition to /admin/:path* makes the matching more robust.
+  matcher: ['/admin', '/admin/:path*', '/login'],
 };
