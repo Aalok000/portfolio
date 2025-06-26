@@ -2,27 +2,15 @@ import * as React from 'react';
 import {
   Sidebar,
   SidebarContent,
-  SidebarGroup,
   SidebarHeader,
   SidebarInset,
-  SidebarMenu,
-  SidebarMenuButton,
-  SidebarMenuItem,
   SidebarProvider,
   SidebarTrigger,
 } from '@/components/ui/sidebar';
-import {
-  FileText,
-  LayoutGrid,
-  Settings,
-  Shield,
-  Trophy,
-  User,
-  Briefcase,
-  Code,
-} from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { Code, Settings } from 'lucide-react';
+import AdminSidebarMenu from './AdminSidebarMenu';
 
 export default function AdminLayout({
   children,
@@ -44,106 +32,7 @@ export default function AdminLayout({
         </SidebarHeader>
 
         <SidebarContent>
-          <SidebarMenu>
-            <SidebarMenuItem>
-              <SidebarMenuButton asChild tooltip="Dashboard">
-                <Link href="/admin">
-                  <LayoutGrid />
-                  <span className="group-data-[collapsible=icon]:hidden">
-                    Dashboard
-                  </span>
-                </Link>
-              </SidebarMenuButton>
-            </SidebarMenuItem>
-
-            <SidebarGroup>
-              <SidebarMenuItem>
-                <SidebarMenuButton
-                  asChild
-                  isActive
-                  tooltip={{
-                    children: 'About Section',
-                    className: 'w-max',
-                  }}
-                >
-                  <Link href="/admin/about">
-                    <User />
-                    <span className="group-data-[collapsible=icon]:hidden">
-                      About Section
-                    </span>
-                  </Link>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-              <SidebarMenuItem>
-                <SidebarMenuButton
-                  asChild
-                  disabled
-                  tooltip={{
-                    children: 'Skills Section (Coming Soon)',
-                    className: 'w-max',
-                  }}
-                >
-                  <Link href="#">
-                    <Shield />
-                    <span className="group-data-[collapsible=icon]:hidden">
-                      Skills Section
-                    </span>
-                  </Link>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-               <SidebarMenuItem>
-                <SidebarMenuButton
-                  asChild
-                  disabled
-                  tooltip={{
-                    children: 'Projects Section (Coming Soon)',
-                    className: 'w-max',
-                  }}
-                >
-                  <Link href="#">
-                    <FileText />
-                    <span className="group-data-[collapsible=icon]:hidden">
-                      Projects Section
-                    </span>
-                  </Link>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-              <SidebarMenuItem>
-                <SidebarMenuButton
-                  asChild
-                  disabled
-                  tooltip={{
-                    children: 'Experience Section (Coming Soon)',
-                    className: 'w-max',
-                  }}
-                >
-                  <Link href="#">
-                    <Briefcase />
-                    <span className="group-data-[collapsible=icon]:hidden">
-                      Experience Section
-                    </span>
-                  </Link>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-               <SidebarMenuItem>
-                <SidebarMenuButton
-                  asChild
-                  disabled
-                  tooltip={{
-                    children: 'Achievements Section (Coming Soon)',
-                    className: 'w-max',
-                  }}
-                >
-                  <Link href="#">
-                    <Trophy />
-                    <span className="group-data-[collapsible=icon]:hidden">
-                      Achievements
-                    </span>
-                  </Link>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-            </SidebarGroup>
-          </SidebarMenu>
+          <AdminSidebarMenu />
         </SidebarContent>
       </Sidebar>
       <SidebarInset className="bg-background min-h-screen">
