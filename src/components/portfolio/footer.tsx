@@ -1,6 +1,7 @@
 import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Lock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -24,9 +25,14 @@ const Footer = () => {
             </a>
           </Button>
         </div>
-        <p className="text-muted-foreground text-sm">
-          &copy; {new Date().getFullYear()} Aalok Tomer. All Rights Reserved.
-        </p>
+        <div className="text-muted-foreground text-sm">
+          <p>&copy; {new Date().getFullYear()} Aalok Tomer. All Rights Reserved.</p>
+          <div className="mt-2">
+            <Link href="/admin" className="hover:text-primary transition-colors inline-flex items-center gap-1">
+              <Lock className="w-3 h-3"/> Admin Panel
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   );

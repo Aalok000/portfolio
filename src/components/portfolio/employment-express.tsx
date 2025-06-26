@@ -2,8 +2,10 @@ import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Briefcase } from 'lucide-react';
+import data from '@/data/portfolio.json';
 
 const EmploymentExpress = ({ id }: { id: string }) => {
+  const exp = data.employmentExpress;
   return (
     <section id={id} className="container mx-auto px-4 py-8">
        <h2 className="text-3xl md:text-4xl font-headline mb-8 text-center text-primary">Featured Experience</h2>
@@ -13,27 +15,21 @@ const EmploymentExpress = ({ id }: { id: string }) => {
             <div>
               <div className="flex items-center gap-3">
                  <Briefcase className="w-8 h-8 text-accent"/>
-                <CardTitle className="font-headline text-2xl text-accent">Cyber Security Intern</CardTitle>
+                <CardTitle className="font-headline text-2xl text-accent">{exp.title}</CardTitle>
               </div>
-              <CardDescription className="mt-1">Employment Express Verband LLP | June 2024 - July 2024</CardDescription>
+              <CardDescription className="mt-1">{exp.company} | {exp.duration}</CardDescription>
             </div>
             <Badge variant="outline" className="border-accent text-accent">Priority for Recruiters</Badge>
           </div>
         </CardHeader>
         <CardContent className="space-y-4">
           <p className="text-muted-foreground">
-            During my internship, I immersed myself in the dynamic field of cybersecurity, focusing on practical vulnerability assessment and penetration testing.
+            {exp.description}
           </p>
           <ul className="list-disc list-inside space-y-2 text-foreground">
-            <li>
-              <strong>Vulnerability Assessment:</strong> Performed assessments on internal applications using TryHackMe labs to identify and understand security weaknesses.
-            </li>
-            <li>
-              <strong>Hands-on Pentesting:</strong> Practiced identifying XSS, SQLi, and IDOR vulnerabilities and utilized tools like Nmap, Burp Suite, and Metasploit for simulated testing.
-            </li>
-            <li>
-              <strong>Project Presentation:</strong> Developed and delivered a comprehensive PowerPoint presentation on key cybersecurity topics as a part of my internship project.
-            </li>
+            {exp.points.map((point, index) => (
+              <li key={index} dangerouslySetInnerHTML={{ __html: point }} />
+            ))}
           </ul>
         </CardContent>
       </Card>

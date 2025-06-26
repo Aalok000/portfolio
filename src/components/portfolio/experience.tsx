@@ -1,30 +1,8 @@
 import React from 'react';
-
-const experiences = [
-    {
-    role: 'Member of BSides Noida',
-    company: 'Cybersecurity Community',
-    duration: 'December 2024 - Present',
-    description: [
-      'Active member of the BSides Noida cybersecurity community.',
-      'Participate in various discussions, workshops, and networking sessions.',
-      'Engage with industry experts to learn about real-world security challenges.',
-      'Contribute to knowledge sharing and collaborative learning.',
-    ],
-  },
-  {
-    role: 'FCRF Summit 2k25 Volunteer',
-    company: 'Cybersecurity Event',
-    duration: 'February 2025',
-    description: [
-      'Assisted in organizing the FCRF Summit 2K25, a cybersecurity-focused event.',
-      'Involved in event planning, speaker coordination, and technical support.',
-      'Helped facilitate ethical hacking challenges and Capture The Flag (CTF) events.',
-    ],
-  },
-];
+import data from '@/data/portfolio.json';
 
 const Experience = ({ id }: { id: string }) => {
+  const experiences = data.experience;
   return (
     <section id={id} className="container mx-auto px-4 py-8">
       <h2 className="text-3xl md:text-4xl font-headline mb-12 text-center text-primary">Community & Volunteer Experience</h2>

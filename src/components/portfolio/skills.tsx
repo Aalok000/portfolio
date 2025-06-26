@@ -1,66 +1,21 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { Code, Terminal, ShieldCheck, GitBranch, Cpu } from 'lucide-react';
 import { Progress } from '@/components/ui/progress';
+import data from '@/data/portfolio.json';
+
 
 interface Skill {
   name: string;
   level: number;
 }
 
-const skillsData = {
-  programming: {
-    title: 'Languages & Scripting',
-    icon: <Code className="h-6 w-6 text-primary" />,
-    skills: [
-      { name: 'Python', level: 85 },
-      { name: 'Shell Scripting', level: 80 },
-      { name: 'SQL', level: 75 },
-      { name: 'C', level: 70 },
-    ],
-  },
-  tools: {
-    title: 'Security Tools & Frameworks',
-    icon: <GitBranch className="h-6 w-6 text-primary" />,
-    skills: [
-      { name: 'Burp Suite', level: 90 },
-      { name: 'Nmap', level: 85 },
-      { name: 'Metasploit', level: 80 },
-      { name: 'Wireshark', level: 75 },
-      { name: 'Nessus', level: 70 },
-      { name: 'OWASP ZAP', level: 70 },
-    ],
-  },
-  os: {
-    title: 'Operating Systems',
-    icon: <Terminal className="h-6 w-6 text-primary" />,
-    skills: [
-      { name: 'Kali Linux', level: 95 },
-      { name: 'Windows', level: 80 },
-    ],
-  },
-  cybersecurity: {
-    title: 'Cybersecurity Concepts',
-    icon: <ShieldCheck className="h-6 w-6 text-primary" />,
-    skills: [
-      { name: 'VAPT', level: 90 },
-      { name: 'Web Application Security', level: 85 },
-      { name: 'OWASP Top 10', level: 85 },
-      { name: 'Network Security', level: 80 },
-      { name: 'Manual Testing', level: 75 },
-    ],
-  },
-  hardware: {
-    title: 'Hardware & IoT',
-    icon: <Cpu className="h-6 w-6 text-primary" />,
-    skills: [
-      { name: 'Arduino Uno', level: 85 },
-      { name: 'NodeMCU', level: 80 },
-      { name: 'Raspberry Pi', level: 75 },
-      { name: 'ESP32', level: 70 },
-    ],
-  },
+const icons: { [key: string]: React.ReactNode } = {
+  programming: <Code className="h-6 w-6 text-primary" />,
+  tools: <GitBranch className="h-6 w-6 text-primary" />,
+  os: <Terminal className="h-6 w-6 text-primary" />,
+  cybersecurity: <ShieldCheck className="h-6 w-6 text-primary" />,
+  hardware: <Cpu className="h-6 w-6 text-primary" />,
 };
 
 const SkillCategory = ({ title, icon, skills }: { title: string; icon: React.ReactNode; skills: Skill[] }) => (
@@ -86,15 +41,14 @@ const SkillCategory = ({ title, icon, skills }: { title: string; icon: React.Rea
 );
 
 const Skills = ({ id }: { id: string }) => {
+  const skillsData = data.skills;
   return (
     <section id={id} className="container mx-auto px-4 py-8">
       <h2 className="text-3xl md:text-4xl font-headline mb-8 text-center text-primary">Skills Showcase</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <SkillCategory {...skillsData.programming} />
-        <SkillCategory {...skillsData.tools} />
-        <SkillCategory {...skillsData.os} />
-        <SkillCategory {...skillsData.cybersecurity} />
-        <SkillCategory {...skillsData.hardware} />
+        {Object.entries(skillsData).map(([key, category]) => (
+          <SkillCategory key={key} title={category.title} icon={icons[key]} skills={category.skills} />
+        ))}
       </div>
     </section>
   );
