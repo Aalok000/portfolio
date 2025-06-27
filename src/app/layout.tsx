@@ -6,6 +6,9 @@ import { ThemeProvider } from '@/components/theme-provider';
 export const metadata: Metadata = {
   title: 'Aalok Tomer | Portfolio',
   description: 'Personal portfolio of Aalok Tomer, showcasing skills, projects, and experience.',
+  icons: {
+    icon: 'data:,',
+  },
 };
 
 export default function RootLayout({
