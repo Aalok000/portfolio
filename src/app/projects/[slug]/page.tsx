@@ -48,7 +48,16 @@ const ProjectPage = ({ params }: { params: { slug: string } }) => {
           <div className="flex flex-wrap gap-2 mb-6">
             {project.tags.map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
           </div>
-          <p className="text-lg text-muted-foreground mb-12">{project.description}</p>
+          
+          <div className="space-y-4 text-lg text-foreground/80 mb-12">
+            {(project as any).longDescription ? (
+              (project as any).longDescription.map((paragraph: string, index: number) => (
+                <div key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />
+              ))
+            ) : (
+              <p>{project.description}</p>
+            )}
+          </div>
           
           <h2 className="text-3xl font-headline mb-8 text-center text-accent">Project Gallery</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
