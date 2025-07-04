@@ -377,7 +377,9 @@
       "description": "Served as a Core-Coordinator for the annual college fest at IMS Ghaziabad.",
        "gallery": [
         { "url": "/images/markfest/2.jpg", "aiHint": "college festival", "orientation": "portrait" },
-        { "url": "/images/markfest/3.jpg", "aiHint": "event management", "orientation": "landscape" }
+        { "url": "/images/markfest/3.jpg", "aiHint": "event management", "orientation": "landscape" },
+        { "url": "/images/markfest/4.jpg", "aiHint": "event volunteers", "orientation": "landscape" },
+        { "url": "/images/markfest/5.jpg", "aiHint": "coordinating team", "orientation": "landscape" }
       ]
     },
     {
