@@ -297,9 +297,9 @@
         "Contribute to knowledge sharing and collaborative learning."
       ],
       "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "cybersecurity conference", "orientation": "landscape" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "group discussion", "orientation": "landscape" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "networking event", "orientation": "landscape" }
+        { "url": "/images/Exp/BSN1.jpg", "aiHint": "cybersecurity conference", "orientation": "landscape" },
+        { "url": "/images/Exp/BSN2.jpg", "aiHint": "group discussion", "orientation": "landscape" },
+        { "url": "/images/Exp/BSN3.jpg", "aiHint": "networking event", "orientation": "landscape" }
       ]
     },
     {
@@ -313,9 +313,12 @@
         "Helped facilitate ethical hacking challenges and Capture The Flag (CTF) events."
       ],
       "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "event banner", "orientation": "landscape" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "volunteer team", "orientation": "landscape" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "ctf competition", "orientation": "landscape" }
+        { "url": "/images/Exp/FCRF1.jpg", "aiHint": "event banner", "orientation": "landscape" },
+        { "url": "/images/Exp/FCRF2.jpg", "aiHint": "volunteer team", "orientation": "landscape" },
+        { "url": "/images/Exp/FCRF3.jpg", "aiHint": "BSN founder", "orientation": "landscape" },
+        { "url": "/images/Exp/FCRF4.jpg", "aiHint": "BSN Friend", "orientation": "landscape" },
+        { "url": "/images/Exp/FCRF5.jpg", "aiHint": "FCRF Special Guest", "orientation": "landscape" },
+        { "url": "/images/Exp/FCRF6.jpg", "aiHint": "FCRF Special Guest", "orientation": "landscape" }
       ]
     }
   ],
@@ -326,8 +329,10 @@
       "slug": "project-nova-winner",
       "description": "Awarded first prize at the Project NOVA 2k24 event held at IPEM College.",
       "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "award ceremony", "orientation": "landscape" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "trophy prize", "orientation": "landscape" }
+        { "url": "/images/project_nova/1.jpg", "aiHint": "award ceremony", "orientation": "landscape" },
+        { "url": "/images/project_nova/2.jpg", "aiHint": "trophy prize", "orientation": "landscape" },
+        { "url": "/images/project_nova/3.jpg", "aiHint": "trophy prize", "orientation": "landscape" },
+        { "url": "/images/project_nova/4.jpg", "aiHint": "trophy prize", "orientation": "landscape" }
       ]
     },
     {
@@ -336,8 +341,12 @@
       "slug": "sqard-of-iot-runner-up",
       "description": "Secured second position in the HACK-A-THON 2K24 at IMS Ghaziabad.",
        "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "hackathon event", "orientation": "landscape" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "award certificate", "orientation": "landscape" }
+        { "url": "/images/IMS_hackathon/1.jpg", "aiHint": "hackathon event", "orientation": "landscape" },
+        { "url": "/images/IMS_hackathon/2.jpg", "aiHint": "award certificate", "orientation": "landscape" },
+        { "url": "/images/IMS_hackathon/3.jpg", "aiHint": "award certificate", "orientation": "landscape" },
+        { "url": "/images/IMS_hackathon/4.jpg", "aiHint": "award certificate", "orientation": "landscape" },
+        { "url": "/images/IMS_hackathon/5.jpg", "aiHint": "award certificate", "orientation": "landscape" },
+        { "url": "/images/IMS_hackathon/7.jpg", "aiHint": "award certificate", "orientation": "landscape" }
       ]
     },
     {
@@ -346,8 +355,9 @@
       "slug": "cross-road-2k24-third",
       "description": "Achieved third position at the Cross Road 2k24 event at HI-Tech College.",
        "gallery": [
-        { "url": "/images/IITD.jpg", "aiHint": "tech competition", "orientation": "landscape" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "group photo", "orientation": "landscape" }
+        { "url": "/images/Hi-tech/1.jpg", "aiHint": "tech competition", "orientation": "landscape" },
+        { "url": "/images/Hi-tech/2.jpg", "aiHint": "group photo", "orientation": "landscape" },
+        { "url": "/images/Hi-tech/3.jpg", "aiHint": "collage Director", "orientation": "landscape" }
       ]
     },
     {
@@ -357,7 +367,7 @@
       "description": "Served as a Core-Coordinator for the annual college fest at IMS Ghaziabad.",
        "gallery": [
         { "url": "/images/markfest/1.jpg", "aiHint": "college event", "orientation": "portrait", "objectPosition": "top" },
-        { "url": "/images/markfest/2.jpg", "aiHint": "event management", "orientation": "portrait" },
+        { "url": "/images/markfest/3.jpg", "aiHint": "event management", "orientation": "portrait" },
         { "url": "/images/markfest/4.jpg", "aiHint": "event volunteers", "orientation": "landscape" },
         { "url": "/images/markfest/5.jpg", "aiHint": "coordinating team", "orientation": "landscape" }
       ]
@@ -392,7 +402,7 @@
       "title": "Cybersecurity Roles, Processes & Operating System Security",
       "slug": "cyber-security-certs",
       "description": "Coursera - Issued Dec 2023. Covers cybersecurity roles, processes, and OS security.",
-      "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/YOUR_CODE_HERE",
+      "credentialUrl": "https://www.credly.com/badges/cb3c6eff-d7e0-48a2-a253-61fccf01be0d/linked_in_profile",
       "gallery": []
     },
     {
@@ -401,19 +411,30 @@
       "slug": "cyber-forensics-ctf",
       "description": "IIT Delhi - Issued Jan 2024. Covers cyber forensics and Capture The Flag events.",
       "credentialUrl": "#",
-      "gallery": []
+      "gallery": [
+        {
+          "url": "/images/IITD.jpg",
+          "aiHint": "certificate document",
+          "orientation": "landscape"
+        },
+        {
+          "url": "/images/IITD1.jpg",
+          "aiHint": "certificate document",
+          "orientation": "landscape"
+        }
+      ]
     },
     {
       "icon": "Shield",
       "title": "Ethical Hacking",
       "slug": "ethical-hacking-cert",
       "description": "WsCubeTech - Issued May 2024. Covers ethical hacking, penetration testing, and security auditing.",
-      "credentialUrl": "#",
+      "credentialUrl": "https://www.credly.com/badges/cb3c6eff-d7e0-48a2-a253-61fccf01be0d/linked_in_profile",
       "gallery": [
         {
-          "url": "https://placehold.co/800x600.png",
+          "url": "/images/wsc.jpeg",
           "aiHint": "certificate document",
-          "orientation": "landscape"
+          "orientation": "portrait"
         }
       ]
     }
