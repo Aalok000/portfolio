@@ -47,10 +47,11 @@ const prompt = ai.definePrompt({
   - Skills
   - Projects
   - Experience
+  - Certifications
   - Achievements
   - Employment Express Verband LLP
 
-  If the visitor is likely a recruiter, prioritize "Employment Express Verband LLP" and "Experience". If the visitor is likely from a college or university, prioritize "Achievements" and "Projects". Otherwise, use your best judgement.
+  If the visitor is likely a recruiter, prioritize "Employment Express Verband LLP", "Experience" and "Certifications". If the visitor is likely from a college or university, prioritize "Achievements" and "Projects". Otherwise, use your best judgement.
   `,
 });
 
