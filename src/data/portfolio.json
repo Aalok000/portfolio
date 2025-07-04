@@ -386,35 +386,27 @@
         { "url": "/images/final_year_project/3.jpg", "aiHint": "project document", "orientation": "portrait" },
         { "url": "/images/final_year_project/1.jpg", "aiHint": "certificate award", "orientation": "portrait"}
       ]
-    }
-  ],
-  "certifications": [
+    },
     {
-      "logoUrl": "https://placehold.co/100x100.png",
-      "logoAiHint": "coursera logo",
+      "icon": "Shield",
       "title": "Cybersecurity Roles, Processes & Operating System Security",
-      "issuer": "Coursera",
-      "date": "Issued Dec 2023",
-      "credentialUrl": "#",
-      "skills": ["Cybersecurity", "Computer Networking"]
+      "slug": "cyber-security-certs",
+      "description": "Coursera - Issued Dec 2023. Covers cybersecurity roles, processes, and OS security.",
+      "gallery": []
     },
     {
-      "logoUrl": "https://placehold.co/100x100.png",
-      "logoAiHint": "iit delhi logo",
+      "icon": "Shield",
       "title": "Cyber Forensics & CTF",
-      "issuer": "IIT Delhi",
-      "date": "Issued Jan 2024",
-      "credentialUrl": "#",
-      "skills": ["Cyber Forensics", "Capture The Flag", "Digital Forensics"]
+      "slug": "cyber-forensics-ctf",
+      "description": "IIT Delhi - Issued Jan 2024. Covers cyber forensics and Capture The Flag events.",
+      "gallery": []
     },
     {
-      "logoUrl": "https://placehold.co/100x100.png",
-      "logoAiHint": "wscubetech logo",
+      "icon": "Shield",
       "title": "Ethical Hacking",
-      "issuer": "WsCubeTech",
-      "date": "Issued May 2024",
-      "credentialUrl": "#",
-      "skills": ["Ethical Hacking", "Penetration Testing", "Security Auditing"]
+      "slug": "ethical-hacking-cert",
+      "description": "WsCubeTech - Issued May 2024. Covers ethical hacking, penetration testing, and security auditing.",
+      "gallery": []
     }
   ],
   "employmentExpress": {
