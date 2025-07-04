@@ -8,7 +8,6 @@ import Skills from '@/components/portfolio/skills';
 import Projects from '@/components/portfolio/projects';
 import Experience from '@/components/portfolio/experience';
 import Achievements from '@/components/portfolio/achievements';
-import Certifications from '@/components/portfolio/certifications';
 import EmploymentExpress from '@/components/portfolio/employment-express';
 import VisitorProfileSelector from '@/components/portfolio/visitor-profile-selector';
 import Footer from '@/components/portfolio/footer';
@@ -25,7 +24,6 @@ const sectionConfig: Record<string, { component: FC<SectionProps>; id: string }>
   'Skills': { component: Skills, id: 'skills' },
   'Projects': { component: Projects, id: 'projects' },
   'Experience': { component: Experience, id: 'experience' },
-  'Certifications': { component: Certifications, id: 'certifications' },
   'Achievements': { component: Achievements, id: 'achievements' },
   'Employment Express Verband LLP': { component: EmploymentExpress, id: 'e-express' },
 };
@@ -35,7 +33,6 @@ const defaultSectionOrder: (keyof typeof sectionConfig)[] = [
   'Skills',
   'Projects',
   'Experience',
-  'Certifications',
   'Achievements',
 ];
 
