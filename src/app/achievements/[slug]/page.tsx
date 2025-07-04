@@ -45,6 +45,7 @@ const AchievementPage = ({ params }: { params: { slug: string } }) => {
               const aspectRatio = photo.orientation === 'portrait' ? 'aspect-[3/4]' : 'aspect-[4/3]';
               const width = photo.orientation === 'portrait' ? 600 : 800;
               const height = photo.orientation === 'portrait' ? 800 : 600;
+              const objectPositionClass = photo.objectPosition ? `object-${photo.objectPosition}` : 'object-center';
               return (
                 <div key={index} className="overflow-hidden rounded-lg shadow-lg border border-border transition-all duration-300 ease-in-out hover:shadow-[0_0_20px_5px_hsl(var(--primary))]">
                   <Image
@@ -52,7 +53,7 @@ const AchievementPage = ({ params }: { params: { slug: string } }) => {
                     alt={`${achievement.title} - Image ${index + 1}`}
                     width={width}
                     height={height}
-                    className={`w-full h-auto object-cover ${aspectRatio}`}
+                    className={`w-full h-auto object-cover ${aspectRatio} ${objectPositionClass}`}
                     data-ai-hint={photo.aiHint}
                   />
                 </div>
