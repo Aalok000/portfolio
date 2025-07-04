@@ -397,8 +397,9 @@
       "slug": "final-project-appreciation",
       "description": "Received appreciation for my final year project during the Farewell 2025 event at IMS Ghaziabad.",
       "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "certificate award" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "college farewell" }
+        { "url": "/images/final_year_project/1.jpg", "aiHint": "certificate award" },
+        { "url": "/images/final_year_project/2.jpg", "aiHint": "college farewell" },
+        { "url": "/images/final_year_project/2.jpg", "aiHint": "project document" }
       ]
     }
   ],
