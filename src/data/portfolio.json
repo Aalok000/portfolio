@@ -392,6 +392,7 @@
       "title": "Cybersecurity Roles, Processes & Operating System Security",
       "slug": "cyber-security-certs",
       "description": "Coursera - Issued Dec 2023. Covers cybersecurity roles, processes, and OS security.",
+      "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/YOUR_CODE_HERE",
       "gallery": []
     },
     {
@@ -399,6 +400,7 @@
       "title": "Cyber Forensics & CTF",
       "slug": "cyber-forensics-ctf",
       "description": "IIT Delhi - Issued Jan 2024. Covers cyber forensics and Capture The Flag events.",
+      "credentialUrl": "#",
       "gallery": []
     },
     {
@@ -406,6 +408,7 @@
       "title": "Ethical Hacking",
       "slug": "ethical-hacking-cert",
       "description": "WsCubeTech - Issued May 2024. Covers ethical hacking, penetration testing, and security auditing.",
+      "credentialUrl": "#",
       "gallery": [
         {
           "url": "https://placehold.co/800x600.png",
