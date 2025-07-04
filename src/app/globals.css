@@ -70,3 +70,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+#__next-dev-toolbar {
+  display: none !important;
+}
