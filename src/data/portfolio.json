@@ -1,12 +1,12 @@
 
 {
   "about": {
-    "description": "I am a final-year BCA student with a deep-seated passion for cybersecurity. My journey is driven by a curiosity for ethical hacking, vulnerability assessment, and network security. I am actively involved in the cybersecurity community, constantly learning, and seeking to apply my skills to solve real-world security challenges.",
+    "description": "I am a BCA Graduate student with a deep-seated passion for cybersecurity. My journey is driven by a curiosity for ethical hacking, vulnerability assessment, and network security. I am actively involved in the cybersecurity community, constantly learning, and seeking to apply my skills to solve real-world security challenges.",
     "imageUrl": "https://placehold.co/400x400.png",
     "imageAiHint": "professional portrait",
     "education": [
       {
-        "degree": "BCA (Bachelor of Computer Applications)",
+        "degree": "BCA (Bachelor in Computer Applications)",
         "institution": "IMS University Courses Campus, Ghaziabad",
         "years": "2022 – 2025"
       },
@@ -265,6 +265,23 @@
     }
   ],
   "experience": [
+    {
+      "role": "Cyber Security Intern",
+      "company": "Employment Express Verband LLP",
+      "duration": "June 2024 - July 2024",
+      "slug": "cyber-security-intern",
+      "description": [
+        "Performed vulnerability assessments on internal applications using TryHackMe labs.",
+        "Practiced identifying XSS, SQLi, and IDOR vulnerabilities in a lab environment.",
+        "Utilized tools like Nmap, Burp Suite, and Metasploit for simulated penetration testing.",
+        "Developed and presented a project on key cybersecurity topics."
+      ],
+      "gallery": [
+        { "url": "https://placehold.co/800x600.png", "aiHint": "cybersecurity dashboard" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "code terminal" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "network scan" }
+      ]
+    },
     {
       "role": "Member of BSides Noida",
       "company": "Cybersecurity Community",

@@ -7,7 +7,7 @@ const Experience = ({ id }: { id: string }) => {
   const experiences = data.experience;
   return (
     <section id={id} className="container mx-auto px-4 py-8">
-      <h2 className="text-3xl md:text-4xl font-headline mb-12 text-center text-primary">Community & Volunteer Experience</h2>
+      <h2 className="text-3xl md:text-4xl font-headline mb-12 text-center text-primary">Experience</h2>
       <div className="relative">
         <div className="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-border"></div>
         {experiences.map((exp, index) => (
