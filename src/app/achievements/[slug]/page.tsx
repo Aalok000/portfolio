@@ -41,18 +41,23 @@ const AchievementPage = ({ params }: { params: { slug: string } }) => {
           
           <h2 className="text-3xl font-headline mb-8 text-center text-accent">Achievement Gallery</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {(achievement.gallery || []).map((photo, index) => (
-              <div key={index} className="overflow-hidden rounded-lg shadow-lg border border-border transition-all duration-300 ease-in-out hover:shadow-[0_0_20px_5px_hsl(var(--primary))]">
-                <Image
-                  src={photo.url}
-                  alt={`${achievement.title} - Image ${index + 1}`}
-                  width={800}
-                  height={600}
-                  className="w-full h-auto object-cover aspect-[4/3]"
-                  data-ai-hint={photo.aiHint}
-                />
-              </div>
-            ))}
+            {(achievement.gallery || []).map((photo: any, index) => {
+              const aspectRatio = photo.orientation === 'portrait' ? 'aspect-[3/4]' : 'aspect-[4/3]';
+              const width = photo.orientation === 'portrait' ? 600 : 800;
+              const height = photo.orientation === 'portrait' ? 800 : 600;
+              return (
+                <div key={index} className="overflow-hidden rounded-lg shadow-lg border border-border transition-all duration-300 ease-in-out hover:shadow-[0_0_20px_5px_hsl(var(--primary))]">
+                  <Image
+                    src={photo.url}
+                    alt={`${achievement.title} - Image ${index + 1}`}
+                    width={width}
+                    height={height}
+                    className={`w-full h-auto object-cover ${aspectRatio}`}
+                    data-ai-hint={photo.aiHint}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </main>

@@ -155,15 +155,18 @@
       "gallery": [
         {
           "url": "https://placehold.co/800x600.png",
-          "aiHint": "pothole road"
+          "aiHint": "pothole road",
+          "orientation": "landscape"
         },
         {
           "url": "https://placehold.co/800x600.png",
-          "aiHint": "computer vision"
+          "aiHint": "computer vision",
+          "orientation": "landscape"
         },
         {
           "url": "https://placehold.co/800x600.png",
-          "aiHint": "iot device"
+          "aiHint": "iot device",
+          "orientation": "landscape"
         }
       ]
     },
@@ -181,9 +184,9 @@
       "github": "https://github.com/Aalok000",
       "aiHint": "raspberry pi circuit",
       "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "raspberry pi circuit" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "code terminal" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "usb device" }
+        { "url": "https://placehold.co/800x600.png", "aiHint": "raspberry pi circuit", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "code terminal", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "usb device", "orientation": "landscape" }
       ]
     },
     {
@@ -201,9 +204,9 @@
       "github": "https://github.com/Aalok000",
       "aiHint": "web security",
        "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "security dashboard" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "code vulnerability" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "network diagram" }
+        { "url": "https://placehold.co/800x600.png", "aiHint": "security dashboard", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "code vulnerability", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "network diagram", "orientation": "landscape" }
       ]
     },
     {
@@ -220,9 +223,9 @@
       "github": "https://github.com/Aalok000",
       "aiHint": "robot arduino",
        "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "line follower robot" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "ultrasonic sensor" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "arduino breadboard" }
+        { "url": "https://placehold.co/800x600.png", "aiHint": "line follower robot", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "ultrasonic sensor", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "arduino breadboard", "orientation": "landscape" }
       ]
     },
     {
@@ -239,9 +242,9 @@
       "github": "https://github.com/Aalok000",
       "aiHint": "rfid project",
        "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "rfid reader" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "electronic circuit" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "lcd screen" }
+        { "url": "https://placehold.co/800x600.png", "aiHint": "rfid reader", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "electronic circuit", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "lcd screen", "orientation": "landscape" }
       ]
     },
     {
@@ -258,9 +261,9 @@
       "github": "https://github.com/Aalok000",
       "aiHint": "smoke detector circuit",
        "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "smoke detector" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "oled display circuit" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "iot device" }
+        { "url": "https://placehold.co/800x600.png", "aiHint": "smoke detector", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "oled display circuit", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "iot device", "orientation": "landscape" }
       ]
     }
   ],
@@ -277,9 +280,9 @@
         "Developed and presented a project on key cybersecurity topics."
       ],
       "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "cybersecurity dashboard" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "code terminal" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "network scan" }
+        { "url": "https://placehold.co/800x600.png", "aiHint": "cybersecurity dashboard", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "code terminal", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "network scan", "orientation": "landscape" }
       ]
     },
     {
@@ -294,9 +297,9 @@
         "Contribute to knowledge sharing and collaborative learning."
       ],
       "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "cybersecurity conference" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "group discussion" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "networking event" }
+        { "url": "https://placehold.co/800x600.png", "aiHint": "cybersecurity conference", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "group discussion", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "networking event", "orientation": "landscape" }
       ]
     },
     {
@@ -310,9 +313,9 @@
         "Helped facilitate ethical hacking challenges and Capture The Flag (CTF) events."
       ],
       "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "event banner" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "volunteer team" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "ctf competition" }
+        { "url": "https://placehold.co/800x600.png", "aiHint": "event banner", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "volunteer team", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "ctf competition", "orientation": "landscape" }
       ]
     }
   ],
@@ -323,8 +326,8 @@
       "slug": "project-nova-winner",
       "description": "Awarded first prize at the Project NOVA 2k24 event held at IPEM College.",
       "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "award ceremony" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "trophy prize" }
+        { "url": "https://placehold.co/800x600.png", "aiHint": "award ceremony", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "trophy prize", "orientation": "landscape" }
       ]
     },
     {
@@ -333,8 +336,8 @@
       "slug": "sqard-of-iot-runner-up",
       "description": "Secured second position in the HACK-A-THON 2K24 at IMS Ghaziabad.",
        "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "hackathon event" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "award certificate" }
+        { "url": "https://placehold.co/800x600.png", "aiHint": "hackathon event", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "award certificate", "orientation": "landscape" }
       ]
     },
     {
@@ -343,8 +346,8 @@
       "slug": "cross-road-2k24-third",
       "description": "Achieved third position at the Cross Road 2k24 event at HI-Tech College.",
        "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "tech competition" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "group photo" }
+        { "url": "https://placehold.co/800x600.png", "aiHint": "tech competition", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "group photo", "orientation": "landscape" }
       ]
     },
     {
@@ -353,8 +356,8 @@
       "slug": "cyber-security-certs",
       "description": "Completed certifications from Coursera (Cyber Security Roles) and IIT Delhi (Cyber Forensics & CTF).",
       "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "online certificate" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "coursera logo" }
+        { "url": "https://placehold.co/800x600.png", "aiHint": "online certificate", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "coursera logo", "orientation": "landscape" }
       ]
     },
     {
@@ -363,8 +366,8 @@
       "slug": "ethical-hacking-cert",
       "description": "Certified in Ethical Hacking from WsCubeTech, covering key principles and techniques.",
       "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "security certificate" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "code screen" }
+        { "url": "https://placehold.co/800x600.png", "aiHint": "security certificate", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "code screen", "orientation": "landscape" }
       ]
     },
     {
@@ -373,8 +376,8 @@
       "slug": "markfest-coordinator",
       "description": "Served as a Core-Coordinator for the annual college fest at IMS Ghaziabad.",
        "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "college festival" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "event management" }
+        { "url": "https://placehold.co/800x600.png", "aiHint": "college festival", "orientation": "landscape" },
+        { "url": "https://placehold.co/800x600.png", "aiHint": "event management", "orientation": "landscape" }
       ]
     },
     {
@@ -383,12 +386,12 @@
       "slug": "maskhari-standup-third",
       "description": "Achieved third position in the 'Maskhari' standup comedy event at Pulse 2025, IMS Ghaziabad.",
        "gallery": [
-        { "url": "/images/Maskhari/1.jpg", "aiHint": "standup comedy" },
-        { "url": "/images/Maskhari/2.jpg", "aiHint": "award ceremony" },
-        { "url": "/images/Maskhari/4.jpg", "aiHint": "stage performance" },
-        { "url": "/images/Maskhari/3.jpg", "aiHint": "audience laughing" },
-        { "url": "/images/Maskhari/5.jpg", "aiHint": "comedian stage" },
-        { "url": "/images/Maskhari/6.jpg", "aiHint": "event trophy" }
+        { "url": "/images/Maskhari/1.jpg", "aiHint": "standup comedy", "orientation": "landscape" },
+        { "url": "/images/Maskhari/2.jpg", "aiHint": "award ceremony", "orientation": "landscape" },
+        { "url": "/images/Maskhari/4.jpg", "aiHint": "stage performance", "orientation": "landscape" },
+        { "url": "/images/Maskhari/3.jpg", "aiHint": "audience laughing", "orientation": "portrait" },
+        { "url": "/images/Maskhari/5.jpg", "aiHint": "comedian stage", "orientation": "portrait" },
+        { "url": "/images/Maskhari/6.jpg", "aiHint": "event trophy", "orientation": "portrait" }
       ]
     },
     {
@@ -397,9 +400,9 @@
       "slug": "final-project-appreciation",
       "description": "Received appreciation for my final year project during the Farewell 2025 event at IMS Ghaziabad.",
       "gallery": [
-        { "url": "/images/final_year_project/1.jpg", "aiHint": "certificate award" },
-        { "url": "/images/final_year_project/2.jpg", "aiHint": "college farewell" },
-        { "url": "/images/final_year_project/2.jpg", "aiHint": "project document" }
+        { "url": "/images/final_year_project/1.jpg", "aiHint": "certificate award", "orientation": "landscape" },
+        { "url": "/images/final_year_project/2.jpg", "aiHint": "college farewell", "orientation": "landscape" },
+        { "url": "/images/final_year_project/3.jpg", "aiHint": "project document", "orientation": "portrait" }
       ]
     }
   ],
