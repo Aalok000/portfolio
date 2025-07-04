@@ -384,7 +384,7 @@
         { "url": "/images/final_year_project/1.jpg", "aiHint": "certificate award", "orientation": "landscape" },
         { "url": "/images/final_year_project/2.jpg", "aiHint": "college farewell", "orientation": "landscape" },
         { "url": "/images/final_year_project/3.jpg", "aiHint": "project document", "orientation": "portrait" },
-        { "url": "/images/final_year_project/1.jpg", "aiHint": "certificate award", "orientation": "portrait"}
+        { "url": "/images/final_year_project/1.jpg", "aiHint": "certificate award", "orientation": "portrait", "objectPosition": "center"}
       ]
     },
     {
@@ -406,7 +406,13 @@
       "title": "Ethical Hacking",
       "slug": "ethical-hacking-cert",
       "description": "WsCubeTech - Issued May 2024. Covers ethical hacking, penetration testing, and security auditing.",
-      "gallery": []
+      "gallery": [
+        {
+          "url": "https://placehold.co/800x600.png",
+          "aiHint": "certificate document",
+          "orientation": "landscape"
+        }
+      ]
     }
   ],
   "employmentExpress": {
