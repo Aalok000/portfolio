@@ -385,7 +385,10 @@
        "gallery": [
         { "url": "/images/Maskhari/1.jpg", "aiHint": "standup comedy" },
         { "url": "/images/Maskhari/2.jpg", "aiHint": "award ceremony" },
-        { "url": "/images/Maskhari/3.jpg", "aiHint": "stage performance" }
+        { "url": "/images/Maskhari/4.jpg", "aiHint": "stage performance" },
+        { "url": "/images/Maskhari/3.jpg", "aiHint": "audience laughing" },
+        { "url": "/images/Maskhari/5.jpg", "aiHint": "comedian stage" },
+        { "url": "/images/Maskhari/6.jpg", "aiHint": "event trophy" }
       ]
     },
     {
