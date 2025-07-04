@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Select,
   SelectContent,
@@ -10,22 +10,27 @@ import {
 } from '@/components/ui/select';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { setCookie } from '@/lib/cookies';
 import { useToast } from '@/hooks/use-toast';
 import { UserCheck } from 'lucide-react';
 
 interface VisitorProfileSelectorProps {
-  onProfileUpdate: () => void;
+  onProfileUpdate: (newProfile: string) => void;
+  initialProfile: string | null;
 }
 
-const VisitorProfileSelector = ({ onProfileUpdate }: VisitorProfileSelectorProps) => {
-  const [profile, setProfile] = useState('');
+const VisitorProfileSelector = ({ onProfileUpdate, initialProfile }: VisitorProfileSelectorProps) => {
+  const [selectedProfile, setSelectedProfile] = useState('');
   const { toast } = useToast();
 
-  const handleSaveProfile = () => {
-    if (profile) {
-      setCookie('visitorProfile', profile, 30);
-      onProfileUpdate();
+  useEffect(() => {
+    if (initialProfile) {
+      setSelectedProfile(initialProfile);
+    }
+  }, [initialProfile]);
+
+  const handleApplyProfile = () => {
+    if (selectedProfile) {
+      onProfileUpdate(selectedProfile);
     } else {
       toast({
         variant: 'destructive',
@@ -50,7 +55,7 @@ const VisitorProfileSelector = ({ onProfileUpdate }: VisitorProfileSelectorProps
       </CardHeader>
       <CardContent>
         <div className="flex flex-col sm:flex-row items-center gap-4">
-          <Select onValueChange={setProfile} value={profile}>
+          <Select onValueChange={setSelectedProfile} value={selectedProfile}>
             <SelectTrigger className="w-full sm:w-[250px]">
               <SelectValue placeholder="What is your role?" />
             </SelectTrigger>
@@ -63,7 +68,7 @@ const VisitorProfileSelector = ({ onProfileUpdate }: VisitorProfileSelectorProps
               <SelectItem value="other">Other</SelectItem>
             </SelectContent>
           </Select>
-          <Button onClick={handleSaveProfile} className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button onClick={handleApplyProfile} className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90">
             Apply Filter
           </Button>
         </div>

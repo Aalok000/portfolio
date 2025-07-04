@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState, useEffect, useMemo, FC } from 'react';
@@ -13,7 +12,7 @@ import EmploymentExpress from '@/components/portfolio/employment-express';
 import VisitorProfileSelector from '@/components/portfolio/visitor-profile-selector';
 import Footer from '@/components/portfolio/footer';
 import { personalizeContent, PersonalizeContentOutput } from '@/ai/flows/personalize-content';
-import { getCookie } from '@/lib/cookies';
+import { getCookie, setCookie } from '@/lib/cookies';
 import { Skeleton } from '@/components/ui/skeleton';
 
 interface SectionProps {
@@ -51,19 +50,20 @@ const SectionSkeleton = () => (
 export default function Home() {
   const [sectionOrder, setSectionOrder] = useState<string[]>(defaultSectionOrder);
   const [loading, setLoading] = useState(true);
-  const [visitorProfile, setVisitorProfile] = useState<string | null>(null);
+  const [activeProfile, setActiveProfile] = useState<string | null>(null);
 
   useEffect(() => {
     // On initial load, get the profile from the cookie
-    setVisitorProfile(getCookie('visitorProfile'));
+    const savedProfile = getCookie('visitorProfile');
+    setActiveProfile(savedProfile);
   }, []);
 
   useEffect(() => {
     const fetchAndSetOrder = async () => {
       setLoading(true);
-      if (visitorProfile) {
+      if (activeProfile) {
         try {
-          const result: PersonalizeContentOutput = await personalizeContent({ visitorProfile });
+          const result: PersonalizeContentOutput = await personalizeContent({ visitorProfile: activeProfile });
           const aiPrioritized = result.prioritizedSections.filter(section => section in sectionConfig);
           const allSections = Object.keys(sectionConfig);
           const orderedSections = [
@@ -82,12 +82,11 @@ export default function Home() {
     };
 
     fetchAndSetOrder();
-  }, [visitorProfile]);
+  }, [activeProfile]);
   
-  const handleProfileUpdate = () => {
-    // When the profile is updated in the child component, update the state here to trigger the effect
-    const profile = getCookie('visitorProfile');
-    setVisitorProfile(profile);
+  const handleProfileUpdate = (newProfile: string) => {
+    setCookie('visitorProfile', newProfile, 30);
+    setActiveProfile(newProfile);
   };
 
   const renderedSections = useMemo(() => {
@@ -110,7 +109,7 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         <div className="container mx-auto px-4">
-          <VisitorProfileSelector onProfileUpdate={handleProfileUpdate} />
+          <VisitorProfileSelector onProfileUpdate={handleProfileUpdate} initialProfile={activeProfile} />
         </div>
         <div className="py-12 md:py-20 space-y-20 md:space-y-32">
           {loading ? (
