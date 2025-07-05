@@ -213,7 +213,7 @@
       "title": "LFR Robot",
       "slug": "lfr-robot",
       "description": "Constructed an LFR (Line Following Robot) using an IR sensor, Arduino, L298N motor driver, DC motors, and a battery. This project demonstrates skills in sensor integration, motor control, and programming logic for autonomous navigation.",
-      "image": "https://placehold.co/600x400.png",
+      "image": "/images/Project/LFR.jpg",
       "tags": [
         "Arduino",
         "IR Sensor",
@@ -224,9 +224,9 @@
       "github": "https://github.com/Aalok000",
       "aiHint": "line follower robot",
       "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "line follower robot", "orientation": "landscape" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "l298n motor driver", "orientation": "landscape" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "arduino breadboard", "orientation": "landscape" }
+        { "url": "/images/Project/LFR.jpg", "aiHint": "line follower robot", "orientation": "landscape" },
+        { "url": "/images/Project/LFR1.jpg", "aiHint": "l298n motor driver", "orientation": "landscape" },
+        { "url": "/images/Project/LFR2.jpg", "aiHint": "arduino breadboard", "orientation": "landscape" }
       ]
     },
     {
