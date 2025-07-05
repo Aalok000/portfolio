@@ -142,7 +142,7 @@
         "<h3 class='text-2xl font-headline mt-6 mb-2 text-accent'>Key Web Development Components Used</h3><h4 class='text-xl font-headline mt-4 mb-1'>Frontend Development:</h4><ul class='list-disc list-inside space-y-1'><li><strong>Technologies Used:</strong> HTML, CSS, JavaScript.</li><li><strong>Purpose:</strong> Design intuitive user interfaces for interacting with the system. Enable users to upload images, view reports, and track the status of pothole repairs.</li><li><strong>Features:</strong> Responsive design for compatibility across devices. Dynamic dashboards for visualizing pothole data.</li></ul><h4 class='text-xl font-headline mt-4 mb-1'>Backend Development:</h4><ul class='list-disc list-inside space-y-1'><li><strong>Technologies Used:</strong> Python (Flask Framework).</li><li><strong>Purpose:</strong> Handle data processing and storage. Manage communication between the frontend and IoT devices.</li><li><strong>Features:</strong> API integration for seamless data exchange. Real-time-processing of user-submitted and IoT-collected data.</li></ul><h4 class='text-xl font-headline mt-4 mb-1'>Database Management:</h4><ul class='list-disc list-inside space-y-1'><li><strong>Technologies Used:</strong> SQLite or MySQL.</li><li><strong>Purpose:</strong> Store and manage data related to potholes, reports, and repair statuses.</li></ul>",
         "<h3 class='text-2xl font-headline mt-6 mb-2 text-accent'>Advantages of Web Development</h3><ul class='list-disc list-inside space-y-1'><li><strong>Accessibility:</strong> Users can access the system from any device with an internet connection.</li><li><strong>Transparency:</strong> Provides clear and detailed reports for public viewing, enhancing accountability.</li><li><strong>Engagement:</strong> Encourages public participation by allowing users to report potholes through an interactive platform.</li></ul>"
       ],
-      "image": "https://placehold.co/600x400.png",
+      "image": "/images/Project/Pothole.jpg",
       "tags": [
         "Python",
         "OpenCV",
@@ -154,17 +154,17 @@
       "aiHint": "pothole road",
       "gallery": [
         {
-          "url": "https://placehold.co/800x600.png",
+          "url": "/images/Project/Pothole.jpg",
           "aiHint": "pothole road",
           "orientation": "landscape"
         },
         {
-          "url": "https://placehold.co/800x600.png",
+          "url": "/images/Project/Pothole1.jpg",
           "aiHint": "computer vision",
           "orientation": "landscape"
         },
         {
-          "url": "https://placehold.co/800x600.png",
+          "url": "/images/Project/Pothole.png",
           "aiHint": "iot device",
           "orientation": "landscape"
         }
@@ -174,7 +174,7 @@
       "title": "Raspberry Pi Pico Rubber Ducky",
       "slug": "raspberry-pi-pico-rubber-ducky",
       "description": "Built a custom USB Rubber Ducky using a Raspberry Pi Pico to simulate Human Interface Device (HID) attacks. Developed and tested various payloads for task automation, reverse shells, and proof-of-concept demonstrations.",
-      "image": "https://placehold.co/600x400.png",
+      "image": "/images/Project/Rubber.png",
       "tags": [
         "Raspberry Pi",
         "Python",
@@ -184,16 +184,16 @@
       "github": "https://github.com/Aalok000",
       "aiHint": "raspberry pi circuit",
       "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "raspberry pi circuit", "orientation": "landscape" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "code terminal", "orientation": "landscape" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "usb device", "orientation": "landscape" }
+        { "url": "/images/Project/Rubber.png", "aiHint": "raspberry pi circuit", "orientation": "landscape" },
+        { "url": "/images/Project/Rubber1.png", "aiHint": "code terminal", "orientation": "landscape" },
+        { "url": "/images/Project/Rubber2.png", "aiHint": "usb device", "orientation": "landscape" }
       ]
     },
     {
       "title": "Web App VAPT on DVWA",
       "slug": "web-app-vapt-on-dvwa",
       "description": "Conducted comprehensive vulnerability testing on the Damn Vulnerable Web Application (DVWA). Identified and exploited common web vulnerabilities such as SQL Injection, XSS, and CSRF to understand attack vectors and mitigation strategies.",
-      "image": "https://placehold.co/600x400.png",
+      "image": "/images/Project/DVWA1.jpg",
       "tags": [
         "VAPT",
         "DVWA",
@@ -204,9 +204,9 @@
       "github": "https://github.com/Aalok000",
       "aiHint": "web security",
        "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "security dashboard", "orientation": "landscape" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "code vulnerability", "orientation": "landscape" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "network diagram", "orientation": "landscape" }
+        { "url": "/images/Project/DVWA1.jpg", "aiHint": "security dashboard", "orientation": "landscape" },
+        { "url": "/images/Project/DVWA.png", "aiHint": "code vulnerability", "orientation": "landscape" },
+        { "url": "/images/Project/DVWA2.png", "aiHint": "network diagram", "orientation": "landscape" }
       ]
     },
     {
@@ -280,10 +280,8 @@
         "Developed and presented a project on key cybersecurity topics."
       ],
       "gallery": [
-        { "url": "https://placehold.co/800x600.png", "aiHint": "cybersecurity dashboard", "orientation": "landscape" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "code terminal", "orientation": "landscape" },
-        { "url": "https://placehold.co/800x600.png", "aiHint": "network scan", "orientation": "landscape" }
-      ]
+        { "url": "/images/EEI.png", "aiHint": "cybersecurity dashboard", "orientation": "landscape" }
+        ]
     },
     {
       "role": "Member of BSides Noida",
@@ -401,9 +399,15 @@
       "icon": "Shield",
       "title": "Cybersecurity Roles, Processes & Operating System Security",
       "slug": "cyber-security-certs",
-      "description": "Coursera - Issued Dec 2023. Covers cybersecurity roles, processes, and OS security.",
+      "description": "Coursera - Issued Dec 2023. Covers cybersecurity roles, processes, and OS security, Other one Certificate Issued by IMS ghaziabad",
       "credentialUrl": "https://www.credly.com/badges/cb3c6eff-d7e0-48a2-a253-61fccf01be0d/linked_in_profile",
-      "gallery": []
+      "gallery": [
+        {
+          "url": "/images/IMSCS.png",
+          "aiHint": "certificate document",
+          "orientation": "landscape"
+        }
+      ]
     },
     {
       "icon": "Shield",
