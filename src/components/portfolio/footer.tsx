@@ -20,7 +20,7 @@ const Footer = () => {
             </a>
           </Button>
           <Button variant="outline" size="icon" asChild>
-            <a href="mailto:aalok.tomer@example.com" aria-label="Email">
+            <a href="mailto:aaloktomer8@gmail.com" aria-label="Email">
               <Mail />
             </a>
           </Button>
