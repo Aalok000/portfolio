@@ -50,5 +50,3 @@ const About = ({ id }: { id: string }) => {
 
 export default About;
 
-
-// this is my Comment
